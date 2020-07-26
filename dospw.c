@@ -10,7 +10,7 @@
 #define puts(x, y, s) gotoxy(x,y);puts(s)
 #define function
 
-void function getpw(char* dest)
+function getpw(char* dest)
 {
 	/* https://stackoverflow.com/questions/3969871/using-getchar-on-c-gets-the-enter-after-input */
 	int idx = 0;
@@ -24,8 +24,6 @@ void function getpw(char* dest)
 		dest[idx++] = chr;
 		if(idx >= 32) break;
 	} while(chr != '\n' && chr != -1);
-	
-	return;
 }
 
 function main()
